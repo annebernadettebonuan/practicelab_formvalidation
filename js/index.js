@@ -88,3 +88,29 @@ function unDo()
 {
     document.getElementById('changingcontainer').innerHTML = changePage().originalhtml;
 }
+
+function billingFunction()
+{
+  if(document.getElementById('togglecheck').checked)
+     {
+        var snum = document.getElementById('mailnum').value;
+        var sname = document.getElementById('mailname').value;
+        var city = document.getElementById('mailcity').value;
+        var province = document.getElementById('mailprovince').value;
+        var zipcode = document.getElementById('mailzip').value;
+
+        document.getElementById('billnum').value = snum;         
+        document.getElementById('billname').value = sname;
+        document.getElementById('billcity').value = city;
+        document.getElementById('billprovince').value = province;
+        document.getElementById('billzip').value = zipcode;
+     }
+  else
+    {
+      document.getElementById('billnum').value = "";         
+      document.getElementById('billname').value = "";
+      document.getElementById('billcity').value = "";
+      document.getElementById('billprovince').value = "";
+      document.getElementById('billzip').value = "";
+    }
+}

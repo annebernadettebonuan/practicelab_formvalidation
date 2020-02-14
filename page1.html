@@ -1,191 +1,49 @@
 <!DOCTYPE html>
-<html lang=en>
+<html lang="en">
 <head>
-	<title>UST</title>
-		<link rel = "stylesheet" type = "text/css"   href = "css/index.css" />
-		<link href="https://fonts.googleapis.com/css?family=Noto+Serif&display=swap" rel="stylesheet">
-		
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link href="css/index.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <script src="js/index.js"></script>
 </head>
 <body>
-	
-
-<div id = "head-container">
-    <div id="left-element">
-    </div>
-    <div id="middle-element">
-    	<p class ="pontifical"> University of Santo Tomas </p>
-       <h1 class ="ust"> University of Santo Tomas </h1>
-       <p class ="catholic"> THE CATHOLIC UNIVERSITY OF THE PHILIPPINES </p>
-    </div>
-    <div id="right-element">
-    	<img src="images/iics.png" class = "iics">
-    	<p class ="iics1"> Institute of Information and </p>
-  		<p class ="iics2"> Computing Sciences </p>
-    </div>
-
-</div>
+	<div id="changingcontainer">
+        <div id = "head-container">
+            <div id="left-element">
+            </div>
+            <div id="middle-element">
+                <h1 class ="twice-title">OFFICIAL MEMBERSHIP</h1>
+            </div>
+        </div>
 
 <div id = "body-container">
-	<h1 class ="application"> Application for Graduation </h1>
+	<h1 class ="register">Type of Membership</h1>
 
 	<div class ="form-container">
-	  <form action="http://example.com">
+	  <form action="#">
+		<table>
+			<br><br><br>
+			<tr>
+				<td> <label for="degree">Era:</label>
+				  <select id="degree-select" onchange="updateMajors()">
+					<option value="" disabled selected>Choose Era</option>
+				  </select> 
+				</td>
 
-	  	<table cellspacing="5" cellpadding="1">
-		   	<tr>
-		   		<br><br>
-		  		<td> <b> School Attended <b> </td>
-			  	<td> <b> School Name </b> </td>
-			  	<td> <b> Completion Year </b> </td>
-		   	</tr>
-		  	<tr>
-		  		<td width = 300px>
-		  			Primary (Grades I-IV)
-		  		</td>
-		  		<td>
-		  			</label> <input type="text" id="snum" name="snum"  maxlength="25" size=50 size=60>
-		  		</td>
-		  		<td colspan=2>
-		  			</label> <input type="text" id="snum" name="snum"  maxlength="4">
-		  		</td>
-		  	</tr>
-		  	<tr>
-		  		<td>
-		  			Intermediate (Grades V-VI)
-		  		</td>
-		  		<td>
-		  			</label> <input type="text" id="snum" name="snum"  maxlength="25" size=50 size=60>
-		  		</td>
-		  		<td colspan=2>
-		  			</label> <input type="text" id="snum" name="snum"  maxlength="4">
-		  		</td>
-		  	</tr>
-		  	<tr>
-		  		<td>
-		  			Secondary Year I/Junior HS Grade 7
-		  		</td>
-		  		<td>
-		  			</label> <input type="text" id="snum" name="snum"  maxlength="25" size=50 size=60>
-		  		</td>
-		  		<td colspan=2>
-		  			</label> <input type="text" id="snum" name="snum"  maxlength="4">
-		  		</td>
-		  	</tr>
-		  	<tr>
-		  		<td>
-		  			Secondary Year II/Junior HS Grade 8
-		  		</td>
-		  		<td>
-		  			</label> <input type="text" id="snum" name="snum"  maxlength="25" size=50 size=60>
-		  		</td>
-		  		<td colspan=2>
-		  			</label> <input type="text" id="snum" name="snum"  maxlength="4">
-		  		</td>
-		  	</tr>
-		  	<tr>
-		  		<td>
-		  			Secondary Year III/Junior HS Grade 9
-		  		</td>
-		  		<td>
-		  			</label> <input type="text" id="snum" name="snum"  maxlength="25" size=50 size=60>
-		  		</td>
-		  		<td colspan=2>
-		  			</label> <input type="text" id="snum" name="snum"  maxlength="4">
-		  		</td>
-		  	</tr>
-		  	<tr>
-		  		<td>
-		  			Secondary Year IV/Junior HS Grade 10
-		  		</td>
-		  		<td>
-		  			</label> <input type="text" id="snum" name="snum"  maxlength="25" size=50 size=60>
-		  		</td>
-		  		<td colspan=2>
-		  			</label> <input type="text" id="snum" name="snum"  maxlength="4">
-		  		</td>
-		  	</tr>
-		  	<tr>
-		  		<td>
-		  			Senior HS Grade 11
-		  		</td>
-		  		<td>
-		  			</label> <input type="text" id="snum" name="snum"  maxlength="25" size=50 size=60>
-		  		</td>
-		  		<td colspan=2>
-		  			</label> <input type="text" id="snum" name="snum"  maxlength="4">
-		  		</td>
-		  	</tr>
-		  	<tr>
-		  		<td>
-		  			Senior HS Grade 12
-		  		</td>
-		  		<td>
-		  			</label> <input type="text" id="snum" name="snum"  maxlength="25" size=50 size=60>
-		  		</td>
-		  		<td colspan=2>
-		  			</label> <input type="text" id="snum" name="snum"  maxlength="4">
-		  		</td>
-		  	</tr>
-		  </table>
-
-		  <table>
-		  	<tr>
-		  		<br><br><b>Admission Status/College Attendance</b><br><br>
-		  		<td width=200px>
-		  			<input type="checkbox"> Shifter from
-		  		</td>
-		  		<td>
-		  			<input type="text" id="snum" name="snum"  maxlength="10" size=80 placeholder="School name">
-		  		</td>
-		  	</tr>
-		  	<tr>
-		  		<td>
-		  			<input type="checkbox"> Transferee from
-		  		</td>
-		  		<td>
-		  			<input type="text" id="snum" name="snum"  maxlength="10" size=80 placeholder="School name">
-		  		</td>
-		  	</tr>
-		  	<tr>
-		  		<td>
-		  			<input type="checkbox"> Second Degree from
-		  		</td>
-		  		<td>
-		  			<input type="text" id="snum" name="snum"  maxlength="10" size=80 placeholder="School name">
-		  		</td>
-		  	</tr>
-		  </table>
-
-
-		  <table>
-		  	<br><br><b>Cross-Enrollement Records (Outside the University)</b><br><br>
-		  	<tr>
-		  		<td>Course/Subject</td>
-		  		<td>College/University</td>
-		  		<td>Term/Special Term</td>
-		  	</tr>
-		  	<tr>
-		  		<td></label><input type="text" id="snum" name="snum"  maxlength="20"></td>
-		  		<td></label> <input type="text" id="snum" name="snum"  maxlength="80" size=80></td>
-		  		<td></label> <input type="text" id="snum" name="snum"  maxlength="20"></td>
-		  	</tr>
-		  	<tr>
-		  		<td></label> <input type="text" id="snum" name="snum"  maxlength="20"></td>
-		  		<td></label> <input type="text" id="snum" name="snum"  maxlength="80" size=80></td>
-		  		<td></label> <input type="text" id="snum" name="snum"  maxlength="20"></td>
-		  	</tr>	
-		  	<tr>
-		  		<td></label> <input type="text" id="snum" name="snum"  maxlength="20"></td>
-		  		<td></label> <input type="text" id="snum" name="snum"  maxlength="80" size=80></td>
-		  		<td></label> <input type="text" id="snum" name="snum"  maxlength="20"></td>
-		  	</tr>
-		  </table>
-
-		
+				<td> <label for="major">Theme: </label>
+				  <select id="major-select">
+					<option value="" disabled selected>Chooose Theme</option>
+				  </select>
+				</td>
+				<script src='js/index.js'></script>
+		  </tr>
+		</table>
 	  </form>
 
 	   <div class="button">
-
 			<!-- Trigger/Open The Modal -->
 			<button id="myBtn" class="button">Submit</button>
 
@@ -256,11 +114,6 @@
 	</div>
 
 </div>
-
-<div class="footer">
-  <p style="text-align: center; color: grey; font-family: Lato, sans-serif; font-weight: lighter;"><br> <br> <br> <br> 2019. &nbsp; Anne Bonuan & Daneah Sarmiento </p>
-</div>
-
 
 
 </body>

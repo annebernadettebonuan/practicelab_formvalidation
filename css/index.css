@@ -3,47 +3,47 @@ body{
   }
   
   /*LANDING PAGE*/
-  #landing-container{
-  
+  #landing-container
+  {
     position: relative;
     left: 0;
     top: 0px;
     width: 100%;
-    height: 600px;
-    background-color: white;
-  
-  
+    height: 700px;
+    background-color: rgb(255, 243, 234);
   }
   
-  #landing-elements{
+  #landing-elements
+  {
     margin: 0 auto;
     text-align: center;
-  
   }
   
-  img.ustseal{
-    width: 150px;
-    height: 150px;
+  img.twicelogo
+  {
+    width: 250px;
+    height: 250px;
     position: relative;
     right: 5px;
-    top: 150px;
-  
+    top: 120px;
   }
   
-  h1.ust-landing{
-    font-family: 'Lato', serif;
+  h1.twice-landing
+  {
+    font-family: 'Ubuntu', sans-serif;
     position: relative;
     text-align: center;
-    top:150px;  
-  
+    top:120px;  
+    color: rgb(253, 78, 137);
   }
   
-  h2.app-landing{
-    font-family: Lato, serif;
+  h2.oneinamillion-landing{
+    font-family: 'Ubuntu', sans-serif;
     font-weight: lighter;
     position: relative;
     text-align: center;
-    top: 150px;
+    top: 105px;
+    color: rgb(253, 78, 137);
   }
   
   .button-landing{
@@ -51,15 +51,15 @@ body{
       margin-bottom: 30px;
       text-align: center;
       position: relative;
-      top: 180px;
+      top: 130px;
   }
   
   
   .apply-button {
-    font-family: Lato, serif;
+    font-family: 'Ubuntu', sans-serif;
     width: 15%;
-    background-color: #FFC12E;
-    color: white;
+    color: rgb(253, 78, 137);
+    color: rgb(255, 243, 234);
     padding: 10px 0px;
     margin: 8px 0;
     border: none;
@@ -74,7 +74,7 @@ body{
   
   
   .apply-button:hover {
-    background-color: #FFB400;
+    background-color: rgb(253, 78, 137);
   }
   
   .apply-button:hover span:after {
@@ -107,18 +107,18 @@ body{
   #head-container {
     overflow: hidden;
     width: 100%;
-    min-height: 190px; /* Remember absolute positioning is outside the page flow! */
+    min-height: 120px; /* Remember absolute positioning is outside the page flow! */
     position: relative;
-    background-color: #F3F4F5;
+    background-color: white;
   
   }
   #left-element {
-    background-image: url("../images/ustseal.png");
+    background-image: url("../images/twicelogo.png");
     background-repeat: no-repeat;
-    background-size: 150px 150px;
+    background-size: 95px 95px;
     position: absolute;
     left: 9px;
-    top: 20px;
+    top: 15px;
     width: 200px;
     height:160px;
   }
@@ -136,61 +136,21 @@ body{
     width: 500px;
     height:160px;
   }
-  
-  img.iics{
-    width: 105px;
-    height: 115px;
+
+  h1.twice-title{
+    font-family: 'Josefin Sans', sans-serif;
     position: absolute;
-    right: 5px;
-    top: 5px;
-  
-  }
-  
-  p.pontifical{
-    font-family: Lato, sans-serif;
-    /*font-weight: lighter;*/
-    position: absolute;
-    top: 20px;
-    left: 170px;
-  }
-  
-  h1.ust{
-    font-family: 'Noto Serif', serif;
-    position: absolute;
-    top: 35px;
-    left: 170px;
-  }
-  
-  p.catholic{
-    font-family: Lato, sans-serif;
-  /*  font-weight: lighter;*/
-    position: absolute;
-    top: 85px;
-    left: 170px;
-  }
-  
-  p.iics1{
-    font-family: Lato, sans-serif;
-  /*  font-weight: lighter;*/
-    position: absolute;
-    top: 110px;
-    right: 20px;
-  }
-  
-  
-  p.iics2{
-    font-family: Lato, sans-serif;
-  /*  font-weight: lighter;*/
-    position: absolute;
-    top: 130px;
-    right: 20px;
+    left: 120px;
+    font-size: 4em;
+    color: rgb(253, 78, 137);
+    font-weight: bolder;
   }
   
   /*BODY*/
-  h1.application{
-    font-family: Lato, serif;
+  h1.register{
     position: relative;
-    text-align: center;
+    text-align: left;
+    margin-left: 135px;
   }
   
   #body-container{
@@ -199,10 +159,30 @@ body{
   
   }
   
+  ul
+  {
+    font-size: 10px;
+    color: rgb(116, 116, 116);
+  }
+  
+  .terms
+  {
+    text-align: center;
+  }
   /*FORMS*/
   input[type=text], select {
     width: 100%;
-    padding: 12px 20px;
+    padding: 10px 15px;
+    margin: 5px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type=password], select {
+    width: 100%;
+    padding: 10px 20px;
     margin: 8px 0;
     display: inline-block;
     border: 1px solid #ccc;
@@ -210,6 +190,7 @@ body{
     box-sizing: border-box;
   }
   
+
   input[type=submit] {
     width: 30%;
     background-color: #FFC12E;
@@ -234,7 +215,7 @@ body{
   
   .next-button {
     width: 30%;
-    background-color: #FFC12E;
+    background-color: rgb(253, 78, 137);
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
@@ -249,7 +230,7 @@ body{
   
   
   .next-button:hover {
-    background-color: #FFB400;
+    background-color: rgb(230, 52, 111);
   }
   
   
@@ -266,7 +247,7 @@ body{
   
   #myBtn{
     width: 30%;
-    background-color: #FFC12E;
+    background-color: rgb(253, 78, 137);
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
@@ -280,7 +261,7 @@ body{
   }
   
   #myBtn:hover {
-    background-color: #FFB400;
+    background-color: rgb(230, 137, 168);
   }
   
   
