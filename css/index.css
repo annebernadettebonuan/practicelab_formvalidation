@@ -1,0 +1,361 @@
+body{
+    margin:0px;
+  }
+  
+  /*LANDING PAGE*/
+  #landing-container{
+  
+    position: relative;
+    left: 0;
+    top: 0px;
+    width: 100%;
+    height: 600px;
+    background-color: white;
+  
+  
+  }
+  
+  #landing-elements{
+    margin: 0 auto;
+    text-align: center;
+  
+  }
+  
+  img.ustseal{
+    width: 150px;
+    height: 150px;
+    position: relative;
+    right: 5px;
+    top: 150px;
+  
+  }
+  
+  h1.ust-landing{
+    font-family: 'Lato', serif;
+    position: relative;
+    text-align: center;
+    top:150px;  
+  
+  }
+  
+  h2.app-landing{
+    font-family: Lato, serif;
+    font-weight: lighter;
+    position: relative;
+    text-align: center;
+    top: 150px;
+  }
+  
+  .button-landing{
+      margin-top: 30px;
+      margin-bottom: 30px;
+      text-align: center;
+      position: relative;
+      top: 180px;
+  }
+  
+  
+  .apply-button {
+    font-family: Lato, serif;
+    width: 15%;
+    background-color: #FFC12E;
+    color: white;
+    padding: 10px 0px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    transition: all 0.5s;
+   }
+  
+  
+  .apply-button:hover {
+    background-color: #FFB400;
+  }
+  
+  .apply-button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+  
+  .apply-button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .apply-button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  
+  /*HEADER*/
+  #head-container {
+    overflow: hidden;
+    width: 100%;
+    min-height: 190px; /* Remember absolute positioning is outside the page flow! */
+    position: relative;
+    background-color: #F3F4F5;
+  
+  }
+  #left-element {
+    background-image: url("../images/ustseal.png");
+    background-repeat: no-repeat;
+    background-size: 150px 150px;
+    position: absolute;
+    left: 9px;
+    top: 20px;
+    width: 200px;
+    height:160px;
+  }
+  
+  #middle-element {
+    margin: 0 auto;
+    text-align: center;
+    width: 400px;
+  }
+  
+  #right-element {
+    position: absolute;
+    right: 2px;
+    top: 10px;
+    width: 500px;
+    height:160px;
+  }
+  
+  img.iics{
+    width: 105px;
+    height: 115px;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+  
+  }
+  
+  p.pontifical{
+    font-family: Lato, sans-serif;
+    /*font-weight: lighter;*/
+    position: absolute;
+    top: 20px;
+    left: 170px;
+  }
+  
+  h1.ust{
+    font-family: 'Noto Serif', serif;
+    position: absolute;
+    top: 35px;
+    left: 170px;
+  }
+  
+  p.catholic{
+    font-family: Lato, sans-serif;
+  /*  font-weight: lighter;*/
+    position: absolute;
+    top: 85px;
+    left: 170px;
+  }
+  
+  p.iics1{
+    font-family: Lato, sans-serif;
+  /*  font-weight: lighter;*/
+    position: absolute;
+    top: 110px;
+    right: 20px;
+  }
+  
+  
+  p.iics2{
+    font-family: Lato, sans-serif;
+  /*  font-weight: lighter;*/
+    position: absolute;
+    top: 130px;
+    right: 20px;
+  }
+  
+  /*BODY*/
+  h1.application{
+    font-family: Lato, serif;
+    position: relative;
+    text-align: center;
+  }
+  
+  #body-container{
+     font-family: Lato, sans-serif;
+     margin-top: 50px;
+  
+  }
+  
+  /*FORMS*/
+  input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type=submit] {
+    width: 30%;
+    background-color: #FFC12E;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #FFB400;
+  }
+  
+  
+  .button {
+      margin-top: 30px;
+      margin-bottom: 30px;
+      text-align: center;
+  }
+  
+  .next-button {
+    width: 30%;
+    background-color: #FFC12E;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+   }
+  
+  
+  .next-button:hover {
+    background-color: #FFB400;
+  }
+  
+  
+  
+  .form-container{
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    border-radius: 5px;
+    background-color: white;
+    padding: 20px;
+  
+  }
+  
+  #myBtn{
+    width: 30%;
+    background-color: #FFC12E;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  #myBtn:hover {
+    background-color: #FFB400;
+  }
+  
+  
+  /*Modal*/
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 50px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    animation-name: animatetop;
+    animation-duration: 0.4s
+    
+  }
+  
+  /* Modal Header */
+  .modal-header {
+    padding: 2px 16px;
+    background-color: #FFC12E;
+    color: white;
+    height: 50px;
+  }
+  
+  /* Modal Body */
+  .modal-body {padding: 2px 50px;}
+  
+  /* Add Animation */
+  @keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  #last-content{
+    text-align: justify;
+  }
+  
+  .footer{
+    position: relative;
+    left: 0;
+    bottom: 0;
+    top: 20px;
+    width: 100%;
+    height: 100px;
+    background-color: #F3F4F5;
+  }  

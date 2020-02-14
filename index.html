@@ -3,11 +3,144 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>UST</title>
     <link href="css/index.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif&display=swap" rel="stylesheet">
     <script src="js/index.js"></script>
 </head>
-<body>
-    
+<body onload="landingpage.html">
+    <div id="changingcontainer">
+        <div id = "head-container">
+            <div id="left-element">
+            </div>
+            <div id="middle-element">
+                <p class ="pontifical"> Pontifical and Royal </p>
+               <h1 class ="ust"> University of Santo Tomas </h1>
+               <p class ="catholic"> THE CATHOLIC UNIVERSITY OF THE PHILIPPINES </p>
+            </div>
+            <div id="right-element">
+                <img src="images/iics.png" class = "iics">
+                <p class ="iics1"> Institute of Information and </p>
+                  <p class ="iics2"> Computing Sciences </p>
+            </div>
+        
+        </div>
+        
+        <div id = "body-container">
+            <h1 class ="application"> Application for Graduation </h1>
+        
+            <div class ="form-container">
+              <form action="#">
+        
+                  <table cellspacing="5" cellpadding="5"	>	
+                      <tr>
+                        <td><label for="fname">Student Number</label> <input type="text" id="snum" name="studentnum" placeholder = "ex. 2019123456"></td>
+                    </tr>
+        
+                    <tr>
+                        <td><label for="lname">Last Name</label>
+                            <input type="text" id="lname" name="lastname" placeholder = "Your last name.." maxlength="15"></td>
+                        <td><label for="fname">First Name</label>
+                            <input type="text" id="fname" name="firstname" placeholder = "Your first name.." maxlength="15"></td>
+                        <td><label for="lname">Middle Name</label> 
+                            <input type="text" id="mname" name="midname" placeholder = "Your middle name.." maxlength="15"></td>
+        
+                        <td><label for="lname">Auxiliary Name</label> 
+                            <input type="text" id="aname" name="aname" placeholder = "e.g., Sr., Jr., I, II, etc." maxlength="15" size="1"></td>
+                    </tr>
+        
+        
+                    <tr>
+                        <td> <label for="degree">Candidate for the Degree of: </label>
+                            <select id="degree-select" onchange="updateMajors()">
+                              <option value="" disabled selected>Choose Degree</option>
+                            </select> 
+                        </td>
+        
+                        <td> <label for="major">Major: </label>
+                            <select id="major-select">
+                              <option value="" disabled selected>Chooose Major</option>
+                            </select>
+                        </td>
+        
+                         <td> <label for="asof">As of</label> 
+                            <input type="text" id="asof name="asof" placeholder = "Year" maxlength="4" size="5">
+                        </td>
+                    </tr>
+                   
+                  </table>
+        
+                  <script src='js/index.js'></script>
+        
+        
+                  <table col=5>
+                       <tr>
+                           <br><br>Mailing Address <br> <br>
+                        <td><label for="snum">Street Number</label> <input type="text" id="snum" name="snum"  maxlength="5" size=2></td>
+                        <td colspan=4><label for="snum">Street Name</label> <input type="text" id="snum" name="snum"  maxlength="20" size=100></td>
+                    </tr>
+                  </table>
+        
+                  <table>
+                      <tr>
+                        <td><label for="snum">City/Municipality</label> <input type="text" id="snum" name="snum"  maxlength="15" size="20"></td>
+                        <td><label for="snum">Province</label> <input type="text" id="snum" name="snum"  maxlength="10" size="15"></td>
+                        <td><label for="snum">Zip Code</label> <input type="text" id="snum" name="snum"  maxlength="10" size="6"></td>
+                      </tr>
+                  </table>
+        
+                 <table>
+                      <tr>
+                          <br><br><br>
+                        <td><label for="snum">Telephone Number</label> <input type="text" id="snum" name="snum"  maxlength="15"></td>
+                        <td><label for="snum">Cellphone Number</label> <input type="text" id="snum" name="snum"  maxlength="15"></td>
+                        <td><label for="snum">E-mail Address</label> <input type="text" id="snum" name="snum"  maxlength="50"></td>
+                      </tr>
+                  </table>
+        
+        
+                   <table>
+                      <tr>
+                        <td><label for="snum">Sex</label>
+                            <select>
+                                <option> - </option>
+                                <option>Male</option>
+                                <option>Female</option>
+                            </select>
+                        </td>
+                        <td><label for="snum">Birthdate</label> <input type="text" id="snum" name="snum"  maxlength="10" placeholder="MM/DD/YYYY"></td>
+                        <td><label for="snum">Birthplace</label> <input type="text" id="snum" name="snum"  maxlength="10"></td>
+                        <td><label for="snum">Citizenship</label> <input type="text" id="snum" name="snum"  maxlength="20"></td>
+                      </tr>
+                  </table>
+        
+                  <table>
+                      <tr>
+                          <br><br> <b> Parents' Information </b><br> <br>
+                        <td><label for="snum">Father's Name</label> <input type="text" id="snum" name="snum"  maxlength="50" size=50></td>
+                        <td><label for="snum">Occupation</label> <input type="text" id="snum" name="snum"  maxlength="30"></td>
+                      </tr>
+                  </table>
+        
+                   <table>
+                      <tr>
+                        <td><label for="snum">Mother's Name</label> <input type="text" id="snum" name="snum"  maxlength="50" size=50></td>
+                        <td><label for="snum">Occupation</label> <input type="text" id="snum" name="snum"  maxlength="30"></td>
+                      </tr>
+                  </table>
+        
+              </form>
+        
+                  <div class="button">
+                      <a href="page1.html" class="next-button">Next</a>	
+                </div>
+            </div>
+        
+        </div>
+        
+        <div class="footer">
+          <p style="text-align: center; color: grey; font-family: Lato, sans-serif; font-weight: lighter;"><br> <br> <br> <br> 2019. &nbsp; Anne Bonuan & Daneah Sarmiento </p>
+        </div>
+    </div>
 </body>
 </html>
