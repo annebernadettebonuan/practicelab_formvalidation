@@ -1,179 +1,234 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registration</title>
-    <link href="css/index.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
-    <script src="js/index.js"></script>
-</head>
-<body>
-    <div id="changingcontainer">
-        <div id = "head-container">
-            <div id="left-element">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Registration</title>
+        <link href="css/index.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+        <script src="js/index.js"></script>
+    </head>
+    <body>
+        <div id="changingcontainer">
+            <div id = "head-container">
+                <div id="left-element">
+                </div>
+                <div id="middle-element">
+                    <h1 class ="twice-title">OFFICIAL MEMBERSHIP</h1>
+                </div>
             </div>
-            <div id="middle-element">
-                <h1 class ="twice-title">OFFICIAL MEMBERSHIP</h1>
-            </div>
-        </div>
-        <div id = "body-container">
-            <h1 class ="register">Register</h1>
-            <div class ="form-container">
-                <form action="#">
-                    <table>
-                        <tr>
-                            <td><label>E-mail Address</label> <input type="text" maxlength="50"></td>
-                            <td><label>Confirm E-mail Address</label> <input type="text" maxlength="50" size="5"></td>
+            <div id = "body-container">
+                <h1 class ="register">Register</h1>
+                <div class ="form-container">
+                    <form action="#">
+                        <table>
+                            <tr>
+                                <td><label>E-mail Address</label> <input type="text" id="email1" maxlength="50"></td>
+                                <td><label>Confirm E-mail Address</label> <input type="text" id="email2" maxlength="50" size="5"></td>
+                                <td id="warning-email">
+                                    
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>Username</label>
+                                    <input type="text" id="username" placeholder = "Username" minlength="6" maxlength="15" required>
+                                </td>
+                                <td>
+                                    <p class="guide">
+                                        <ul>
+                                            <li>
+                                                Must be between six and 20 characters long.
+                                            </li>
+                                            <li>
+                                                Is not case-sensitive.
+                                            </li>
+                                        </ul>
+                                    </p>
+                                </td>
+                                <td id="warning-username">
+                                    
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="password">Password</label>
+                                    <input type="password" id="password1" minlength="8" maxlength="20" required>
+                                </td>
+                                <td>
+                                    <p class="guide">
+                                        <ul>
+                                            <li>
+                                                Must be between eight and 20 characters long.
+                                            </li>
+                                            <li>
+                                                Is case-sensitive.
+                                            </li>
+                                            <li>
+                                                Must be different from your first name, last name, and username
+                                            </li>
+                                        </ul>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="password">Confirm Password</label>
+                                    <input type="password" id="password2" minlength="8" maxlength="20" required>
+                                </td>
+                                <td id="warning-password">
+                                    
+                                </td>
+                            </tr>
+                        </table>
+                        <table cellspacing="5" cellpadding="5">	
+                            <tr>
+                                <br>
+                                <hr>
+                                <br>
+                                <b>Personal Information</b><br> <br>
                         </tr>
                         <tr>
-                            <td>
-                                <label>Username</label>
-                                <input type="text" id="username" placeholder = "Username" minlength="6" maxlength="15" required>
-                            </td>
-                            <td>
-                                <p class="guide">
-                                    <ul>
-                                        <li>
-                                            Must be between six and 20 characters long.
-                                        </li>
-                                        <li>
-                                            Can contain any letters from a to z and any numbers from 0 through 9.
-                                        </li>
-                                        <li>
-                                            Can contain . (period) - (hyphen or dash), and _ (underscore).
-                                        </li>
-                                        <li>
-                                            Is not case-sensitive.
-                                        </li>
-                                    </ul>
-                                </p>
-                            </td>
+                            <td><label>Last Name</label>
+                                <input type="text" id ='lname' placeholder = "Your last name.." maxlength="15"></td>
+                            <td><label>First Name</label>
+                                <input type="text" id = 'fname' placeholder = "Your first name.." maxlength="15"></td>
+                            <td><label>Middle Name</label> 
+                                <input type="text" id = 'mname' placeholder = "Your middle name.." maxlength="15"></td>
+                            <td><label>Auxiliary Name</label> 
+                                <input type="text" id = 'auxname' placeholder = "e.g., Sr., Jr., I, II, etc." maxlength="15" size="1"></td>
                         </tr>
-                        <tr>
-                            <td>
-                                <label for="password">Password</label>
-                                <input type="password" id="password1" minlength="8" maxlength="20" required>
+                            <tr>
+                            <td><label>Sex</label>
+                                <select id='sex'>
+                                    <option value="Not specified"> - </option>
+                                    <option value="Male">Male</option>
+                                    <option value="Female">Female</option>
+                                </select>
                             </td>
-                            <td>
-                                <p class="guide">
-                                    <ul>
-                                        <li>
-                                            Must be between eight and 20 characters long.
-                                        </li>
-                                        <li>
-                                            Must include at least one number or special character and one letter.
-                                        </li>
-                                        <li>
-                                            Can contain spaces and some special characters, including @ (at sign) . (period) - (hyphen or dash) _ (underscore).
-                                        </li>
-                                        <li>
-                                            Cannot contain non-English characters (such as é).
-                                        </li>
-                                        <li>
-                                            Is case-sensitive.
-                                        </li>
-                                        <li>
-                                            Must be different from your first name, last name, and username
-                                        </li>
-                                    </ul>
-                                </p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <label for="password">Confirm Password</label>
-                                <input type="password" id="password2" minlength="8" maxlength="20" required>
-                            </td>
-                        </tr>
-                    </table>
-                    <table cellspacing="5" cellpadding="5">	
-                        <tr>
-                            <br>
+                            <td><label>Birthday</label> <input type="date" id="birthday" maxlength="10" value="2001-01-01"></td>
+                            <td><label>Citizenship</label> <input type="text" id="citizenship" maxlength="20"></td>
+                            <td><label>Phone Number</label> <input type="text" id="number" maxlength="13" value="+63"></td>
+                            </tr>
+                        </table>
+            
+                        <table col=5>
+                            <hr>
+                            <tr>
+                                <br><br>Mailing Address <br> <br>
+                            <td><label >Street Number</label> <input type="text" id="mailnum" maxlength="5" size=2></td>
+                            <td colspan=4><label >Street Name</label> <input type="text" id="mailname" maxlength="20" size=100></td>
+                            </tr>
+                        </table>
+            
+                        <table>
+                            <tr>
+                            <td><label >City/Municipality</label> <input type="text" id="mailcity" maxlength="20" size="20"></td>
+                            <td><label >Province</label> <input type="text" id="mailprovince" maxlength="20" size="15"></td>
+                            <td><label >Zip Code</label> <input type="text" id="mailzip" maxlength="10" size="6"></td>
+                            </tr>
+                        </table>
+            
+                        <table col=5>
                             <hr>
                             <br>
-                            <b>Personal Information</b><br> <br>
-                      </tr>
-                      <tr>
-                          <td><label>Last Name</label>
-                              <input type="text" placeholder = "Your last name.." maxlength="15"></td>
-                          <td><label>First Name</label>
-                              <input type="text" placeholder = "Your first name.." maxlength="15"></td>
-                          <td><label>Middle Name</label> 
-                              <input type="text" placeholder = "Your middle name.." maxlength="15"></td>
-          
-                          <td><label>Auxiliary Name</label> 
-                              <input type="text" placeholder = "e.g., Sr., Jr., I, II, etc." maxlength="15" size="1"></td>
-                      </tr>
-                        <tr>
-                          <td><label>Sex</label>
-                              <select>
-                                  <option> - </option>
-                                  <option>Male</option>
-                                  <option>Female</option>
-                              </select>
-                          </td>
-                          <td><label>Birthdate</label> <input type="text"  maxlength="10" placeholder="MM/DD/YYYY"></td>
-                          <td><label>Citizenship</label> <input type="text" maxlength="20"></td>
-                          <td><label>Cellphone Number</label> <input type="text" maxlength="13" value="+63"></td>
+                            <input type="checkbox" id="togglecheck" onclick="billingFunction()"> Same as Mailing Address?
+                            <tr>
+                                <br><br>Billing Address <br> <br>
+                            <td><label >Street Number</label> <input type="text" id="billnum" maxlength="5" size=2></td>
+                            <td colspan=4><label >Street Name</label> <input type="text" id="billname" maxlength="20" size=100></td>
                         </tr>
                     </table>
-          
-                    <table col=5>
-                        <hr>
-                        <tr>
-                             <br><br>Mailing Address <br> <br>
-                          <td><label >Street Number</label> <input type="text" id="mailnum" maxlength="5" size=2></td>
-                          <td colspan=4><label >Street Name</label> <input type="text" id="mailname" maxlength="20" size=100></td>
-                        </tr>
-                    </table>
-          
+            
                     <table>
                         <tr>
-                          <td><label >City/Municipality</label> <input type="text" id="mailcity" maxlength="20" size="20"></td>
-                          <td><label >Province</label> <input type="text" id="mailprovince" maxlength="10" size="15"></td>
-                          <td><label >Zip Code</label> <input type="text" id="mailzip" maxlength="10" size="6"></td>
+                            <td><label >City/Municipality</label> <input type="text" id="billcity" maxlength="20" size="20"></td>
+                            <td><label >Province</label> <input type="text" id="billprovince" maxlength="20" size="15"></td>
+                            <td><label >Zip Code</label> <input type="text" id="billzip" maxlength="10" size="6"></td>
                         </tr>
                     </table>
-          
-                    <table col=5>
-                        <hr>
-                        <br>
-                        <input type="checkbox" id="togglecheck" onclick="billingFunction()"> Same as Mailing Address?
+                    <table>
                         <tr>
-                            <br><br>Billing Address <br> <br>
-                         <td><label >Street Number</label> <input type="text" id="billnum" maxlength="5" size=2></td>
-                         <td colspan=4><label >Street Name</label> <input type="text" id="billname" maxlength="20" size=100></td>
-                     </tr>
-                   </table>
-         
-                   <table>
-                       <tr>
-                         <td><label >City/Municipality</label> <input type="text" id="billcity" maxlength="20" size="20"></td>
-                         <td><label >Province</label> <input type="text" id="billprovince" maxlength="10" size="15"></td>
-                         <td><label >Zip Code</label> <input type="text" id="billzip" maxlength="10" size="6"></td>
-                       </tr>
-                   </table>
-         
-                </form>
-                    <div class="terms">
-                        <br>
-                        <input type="checkbox" id="terms">  I agree to the Terms and Conditions
-                        <br>
-                        <input type="checkbox" id="18above">  I am 18 and above years old
-                    </div>
+                            <td></td>
+                            <td>
+                                <p id='warning-info'></p>
+                                <p id='warning-bday'></p>
+                                <p id='warning-address'></p>
+                            </td>
+                        </tr>
+                    </table>
+                    </form>
                     <div class="button">
-                        <a href="page1.html" class="next-button">Register</a>
-                  </div>
-              </div>
-          
-          </div>
-          
-          <div class="footer">
-            <p style="text-align: center; color: grey; font-family: Lato, sans-serif; font-weight: lighter;"><br> <br> <br> <br> 2019. &nbsp; Anne Bonuan & Daneah Sarmiento </p>
-          </div>
+                        <!-- Trigger/Open The Modal -->
+                        <button id="myBtn" class="button" onclick="getModal(this)">Submit</button>
+                        <!-- The Modal -->
+                        <div id="myModal" class="modal">
+                            <!-- Modal content -->
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <span class="close">&times;</span>
+                                </div>
+                                <div class="modal-body" style="text-align: justify;">
+                                    <font size="4">
+                                        <p id="last-content">
+                                            <b>Confirm Registration</b>
+                                        </p>
+                                     <br>
+                                    <font size="2.5">
+                                        <p id="last-content-username">
+                                            Username:
+                                        </p>
+                                        <p id="last-content-email">
+                                            E-mail Addess:
+                                        </p>
+                                        <p id="last-content-name">
+                                            Name: 
+                                        </p><p id="last-content-birthday">
+                                            Birthday:
+                                        </p><p id="last-content-citizenship">
+                                            Citizenship:
+                                        </p><p id="last-content-sex">
+                                            Sex:
+                                        </p><p id="last-content-number">
+                                            Phone Number:
+                                        </p>
+                                        <p id="last-content-mailingaddress">
+                                            Mailing Address:
+                                        </p>
+                                        <p id="last-content-billingaddress">
+                                            Billing Address:
+                                        </p>
+                                    </font>
+                                </div>
+                                <form action="confirmpage.html">
+                                    <div class="button">
+                                        <input type="submit" value="Register">
+                                    </div>
+                                </form>
+                                <br>
+                            </div>
+                        </div>
+                        <script>
+                            var modal = document.getElementById('myModal');
+                            var span = document.getElementsByClassName('close')[0];
+                            
+                            span.onclick = function()
+                            {
+                                modal.style.display = "none";
+                            }
+                            
+                            window.onclick = function(event)
+                            {
+                                if (event.target == modal)
+                                {
+                                    modal.style.display = "none";
+                                }
+                            }
+                        </script>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-</body>
+    </body>
 </html>

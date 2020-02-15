@@ -1,342 +1,433 @@
-body{
-    margin:0px;
-  }
+body
+{
+  margin:0px;
+}
+
+/*LANDING PAGE*/
+#landing-container
+{
+  position: relative;
+  left: 0;
+  top: 0px;
+  width: 100%;
+  height: 700px;
+  background-color: rgb(255, 243, 234);
+}
   
-  /*LANDING PAGE*/
-  #landing-container
-  {
-    position: relative;
-    left: 0;
-    top: 0px;
-    width: 100%;
-    height: 700px;
-    background-color: rgb(255, 243, 234);
-  }
+#landing-elements
+{
+  margin: 0 auto;
+  text-align: center;
+}
   
-  #landing-elements
-  {
-    margin: 0 auto;
-    text-align: center;
-  }
+img.twicelogo
+{
+  width: 250px;
+  height: 250px;
+  position: relative;
+  right: 5px;
+  top: 120px;
+}
   
-  img.twicelogo
-  {
-    width: 250px;
-    height: 250px;
-    position: relative;
-    right: 5px;
-    top: 120px;
-  }
+h1.twice-landing
+{
+  font-family: 'Ubuntu', sans-serif;
+  position: relative;
+  text-align: center;
+  top:120px;  
+  color: rgb(253, 78, 137);
+}
   
-  h1.twice-landing
-  {
-    font-family: 'Ubuntu', sans-serif;
-    position: relative;
-    text-align: center;
-    top:120px;  
-    color: rgb(253, 78, 137);
-  }
-  
-  h2.oneinamillion-landing{
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: lighter;
-    position: relative;
-    text-align: center;
-    top: 105px;
-    color: rgb(253, 78, 137);
-  }
-  
-  .button-landing{
-      margin-top: 30px;
-      margin-bottom: 30px;
-      text-align: center;
-      position: relative;
-      top: 130px;
-  }
-  
-  
-  .apply-button {
-    font-family: 'Ubuntu', sans-serif;
-    width: 15%;
-    color: rgb(253, 78, 137);
-    color: rgb(255, 243, 234);
-    padding: 10px 0px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    text-decoration: none;
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    transition: all 0.5s;
-   }
+h2.oneinamillion-landing{
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: lighter;
+  position: relative;
+  text-align: center;
+  top: 105px;
+  color: rgb(253, 78, 137);
+}
+
+h2.successful{
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: lighter;
+  position: relative;
+  text-align: center;
+  top: 130px;
+  color: rgb(253, 78, 137);
+}
+
+h4.confirm-page
+{
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: lighter;
+  position: relative;
+  text-align: center;
+  top: 115px;
+  color: rgb(253, 78, 137);
+}
+
+.button-landing
+{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+  position: relative;
+  top: 130px;
+}
   
   
-  .apply-button:hover {
-    background-color: rgb(253, 78, 137);
-  }
+.apply-button
+{
+  font-family: 'Ubuntu', sans-serif;
+  width: 15%;
+  color: rgb(253, 78, 137);
+  color: rgb(255, 243, 234);
+  padding: 10px 0px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  transition: all 0.5s;
+}
   
-  .apply-button:hover span:after {
-    opacity: 1;
-    right: 0;
-  }
+.apply-button:hover
+{
+  background-color: rgb(253, 78, 137);
+}
   
-  .apply-button span {
-    cursor: pointer;
-    display: inline-block;
-    position: relative;
-    transition: 0.5s;
-  }
+.apply-button:hover span:after
+{
+  opacity: 1;
+  right: 0;
+}
   
-  .apply-button span:after {
-    content: '\00bb';
-    position: absolute;
-    opacity: 0;
-    top: 0;
-    right: -20px;
-    transition: 0.5s;
-  }
+.apply-button span
+{
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+  
+.apply-button span:after
+{
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
   
   .button:hover span {
     padding-right: 25px;
   }
   
-  
-  /*HEADER*/
-  #head-container {
-    overflow: hidden;
-    width: 100%;
-    min-height: 120px; /* Remember absolute positioning is outside the page flow! */
-    position: relative;
-    background-color: white;
-  
-  }
-  #left-element {
-    background-image: url("../images/twicelogo.png");
-    background-repeat: no-repeat;
-    background-size: 95px 95px;
-    position: absolute;
-    left: 9px;
-    top: 15px;
-    width: 200px;
-    height:160px;
-  }
-  
-  #middle-element {
-    margin: 0 auto;
-    text-align: center;
-    width: 400px;
-  }
-  
-  #right-element {
-    position: absolute;
-    right: 2px;
-    top: 10px;
-    width: 500px;
-    height:160px;
-  }
+/*HEADER*/
+#head-container
+{
+  overflow: hidden;
+  width: 100%;
+  min-height: 120px; /* Remember absolute positioning is outside the page flow! */
+  position: relative;
+  background-color: white;
+}
 
-  h1.twice-title{
-    font-family: 'Josefin Sans', sans-serif;
-    position: absolute;
-    left: 120px;
-    font-size: 4em;
-    color: rgb(253, 78, 137);
-    font-weight: bolder;
-  }
+#left-element
+{
+  background-image: url("../images/twicelogo.png");
+  background-repeat: no-repeat;
+  background-size: 95px 95px;
+  position: absolute;
+  left: 30px;
+  top: 15px;
+  width: 200px;
+  height:160px;
+}
   
-  /*BODY*/
-  h1.register{
-    position: relative;
-    text-align: left;
-    margin-left: 135px;
-  }
+#middle-element
+{
+  margin: 0 auto;
+  text-align: center;
+  width: 400px;
+}
   
-  #body-container{
-     font-family: Lato, sans-serif;
-     margin-top: 50px;
-  
-  }
-  
-  ul
-  {
-    font-size: 10px;
-    color: rgb(116, 116, 116);
-  }
-  
-  .terms
-  {
-    text-align: center;
-  }
-  /*FORMS*/
-  input[type=text], select {
-    width: 100%;
-    padding: 10px 15px;
-    margin: 5px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-  }
-  
-  input[type=password], select {
-    width: 100%;
-    padding: 10px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-  }
-  
+#right-element
+{
+  position: absolute;
+  right: 2px;
+  top: 10px;
+  width: 500px;
+  height:160px;
+}
 
-  input[type=submit] {
-    width: 30%;
-    background-color: #FFC12E;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+h1.twice-title
+{
+  font-family: 'Josefin Sans', sans-serif;
+  position: absolute;
+  left: 150px;
+  font-size: 4em;
+  color: rgb(253, 78, 137);
+  font-weight: bolder;
+}
+  
+/*BODY*/
+h1.register
+{
+  position: relative;
+  text-align: left;
+  margin-left: 135px;
+}
+  
+#body-container
+{
+  font-family: Lato, sans-serif;
+  margin-top: 50px;
+}
+  
+ul
+{
+  font-size: 10px;
+  color: rgb(116, 116, 116);
+}
+
+/*FORMS*/
+input[type=text], select
+{
+  width: 100%;
+  padding: 10px 15px;
+  margin: 5px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+  
+input[type=password], select
+{
+  width: 100%;
+  padding: 10px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=date], select
+{
+  width: 100%;
+  padding: 10px 20px;
+  margin: 8px 0;
+  font-size: 13px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit]
+{
+  width: 30%;
+  background-color:  rgb(253, 78, 137);
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+  
+input[type=submit]:hover
+{
+  background-color: rgb(230, 52, 111);
+}
+  
+  
+.button
+{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+  
+.next-button
+{
+  width: 30%;
+  background-color: rgb(253, 78, 137);
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.next-button:hover
+{
+  background-color: rgb(230, 52, 111);
+}
+  
+.form-container
+{
+  width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  border-radius: 5px;
+  background-color: white;
+  padding: 20px;
+}
+  
+#myBtn
+{
+  width: 30%;
+  background-color: rgb(253, 78, 137);
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 15px;
+}
+  
+#myBtn:hover
+{
+  background-color: rgb(230, 52, 111);
+}
+  
+/*Modal*/
+/* The Modal (background) */
+.modal
+{
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 50px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  overflow: auto; /* Enable scroll if needed */
+}
+  
+/* Modal Content */
+.modal-content
+{
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  animation-name: animatetop;
+  animation-duration: 0.4s; 
+}
+  
+/* Modal Header */
+.modal-header
+{
+  padding: 2px 10px;
+  background-color: rgb(230, 52, 111);
+  color: white;
+  height: 35px;
+}
+  
+/* Modal Body */
+.modal-body
+{
+  padding: 1px 120px;
+  padding-top: 0px;
+}
+  
+/* Add Animation */
+@keyframes animatetop
+{
+  from
+  {
+    top: -300px;
+    opacity: 0
   }
-  
-  input[type=submit]:hover {
-    background-color: #FFB400;
-  }
-  
-  
-  .button {
-      margin-top: 30px;
-      margin-bottom: 30px;
-      text-align: center;
-  }
-  
-  .next-button {
-    width: 30%;
-    background-color: rgb(253, 78, 137);
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    text-decoration: none;
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-   }
-  
-  
-  .next-button:hover {
-    background-color: rgb(230, 52, 111);
-  }
-  
-  
-  
-  .form-container{
-    width: 1000px;
-    margin: 0 auto;
-    position: relative;
-    border-radius: 5px;
-    background-color: white;
-    padding: 20px;
-  
-  }
-  
-  #myBtn{
-    width: 30%;
-    background-color: rgb(253, 78, 137);
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    text-decoration: none;
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-  }
-  
-  #myBtn:hover {
-    background-color: rgb(230, 137, 168);
-  }
-  
-  
-  /*Modal*/
-  /* The Modal (background) */
-  .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 50px; /* Location of the box */
-    left: 0;
+  to
+  {
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    opacity: 1
   }
+}
   
-  /* Modal Content */
-  .modal-content {
-    position: relative;
-    background-color: #fefefe;
-    margin: auto;
-    padding: 0;
-    border: 1px solid #888;
-    width: 80%;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-    animation-name: animatetop;
-    animation-duration: 0.4s
-    
-  }
+/* The Close Button */
+.close
+{
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
   
-  /* Modal Header */
-  .modal-header {
-    padding: 2px 16px;
-    background-color: #FFC12E;
-    color: white;
-    height: 50px;
-  }
+.close:hover, .close:focus
+{
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
   
-  /* Modal Body */
-  .modal-body {padding: 2px 50px;}
-  
-  /* Add Animation */
-  @keyframes animatetop {
-    from {top: -300px; opacity: 0}
-    to {top: 0; opacity: 1}
-  }
-  
-  /* The Close Button */
-  .close {
-    color: #aaaaaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-  }
-  
-  .close:hover,
-  .close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-  }
-  
-  #last-content{
-    text-align: justify;
-  }
-  
-  .footer{
-    position: relative;
-    left: 0;
-    bottom: 0;
-    top: 20px;
-    width: 100%;
-    height: 100px;
-    background-color: #F3F4F5;
-  }  
+#last-content
+{
+  padding-top: 0px;
+  text-align: center;
+}
+
+
+
+/****PAGE-1****/
+#image
+{
+  line-height:300px;
+  width: 300px;
+  height: 300px;
+  border: 5px solid black;
+  left: 15px;
+  margin: 0 auto;
+  background-color: white;
+  background-image: url('');
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.preview
+{
+  width:10%;
+  margin-left:17%;
+  border: 10px solid black;
+}
+
+img{
+    width:95%;
+}
+
+.price-text
+{
+  font-size: 2em;
+}
+
+#warning-email, #warning-username, #warning-password, #warning-info, #warning-bday, #warning-address
+{
+  font-size: 13px;
+  color: red;
+  padding-left: 20px;
+}
